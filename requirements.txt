@@ -1,0 +1,6 @@
+streamlit
+Pillow
+rembg
+requests
+streamlit-image-comparison
+streamlit-option-menu
