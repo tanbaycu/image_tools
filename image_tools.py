@@ -11,11 +11,11 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import google.generativeai as genai
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import os
 
 
-load_dotenv()
+# load_dotenv()
 # Cấu hình trang
 st.set_page_config(page_title="AI Background Remover", page_icon="🎭", layout="wide")
 
