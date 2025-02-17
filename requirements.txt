@@ -5,6 +5,5 @@ streamlit-image-comparison
 streamlit-option-menu
 requests
 streamlit-lottie
-email
 google-generativeai
 python-dotenv
