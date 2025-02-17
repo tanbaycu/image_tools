@@ -1,6 +1,10 @@
 streamlit
-Pillow
 rembg
-requests
+Pillow
 streamlit-image-comparison
 streamlit-option-menu
+requests
+streamlit-lottie
+smtplib
+email
+google-generativeai
