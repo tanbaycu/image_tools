@@ -8,3 +8,4 @@ streamlit-lottie
 smtplib
 email
 google-generativeai
+python-dotenv

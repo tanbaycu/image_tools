@@ -11,12 +11,16 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import google.generativeai as genai
+from dotenv import load_dotenv
+import os
 
+
+load_dotenv()
 # Cấu hình trang
 st.set_page_config(page_title="AI Background Remover", page_icon="🎭", layout="wide")
 
 # Khởi tạo Gemini AI
-genai.configure(api_key="AIzaSyAOJ9gfKhJjwrGa4UDxh8_y4iHY6ebKI88")
+genai.configure(api_key=os.getenv('GEMINI_API_KEY'))
 model = genai.GenerativeModel('gemini-2.0-flash-exp')
 
 # Hàm tiện ích
@@ -342,9 +346,10 @@ with st.sidebar:
             if st.session_state.user_email and user_message:
                 try:
                     ai_response = get_ai_response(user_message)
-                    sender_email = "testuserbaycu@gmail.com"
+                    sender_email = os.getenv('SENDER_EMAIL')
+                    password = os.getenv('SENDER_PASSWORD')
                     receiver_email = st.session_state.user_email
-                    password = "jqzq kbqh hywd gmxw"
+                   
 
                     message = MIMEMultipart()
                     message["From"] = sender_email
