@@ -6,4 +6,4 @@ streamlit-option-menu
 requests
 streamlit-lottie
 google-generativeai
-python-dotenv
+onnxruntime
